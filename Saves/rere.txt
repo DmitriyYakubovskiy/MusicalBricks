@@ -1,0 +1,7 @@
+rere 2
+0|m hhp t2 t3 by|m hhp t2 t3 by|m hhp t2 t3 by|m hhp t2 t3 bn|
+5|m hho k t3|m hho k t3|m hho k t3|m hho k t3 by|
+0|e hhz t2 r|e hhz t2 r|e hhz t2 r|e hhz t2 r|
+0|e t1 t2 t3|e t1 t2 t3|e t1 t2 t3|e t1 t2 t3|
+0|e hhp t2 t3|m hhp t2 t3|m hhp t2 t3|m hhp t2 t3 by|
+0|gre re Re re|m hhp t2 t3|m hhp t2 t3|m hhp t2 t3 by|
