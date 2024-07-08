@@ -39,7 +39,7 @@ namespace Assets.Scripts.Managers
                     string file = File.ReadAllText($"{fileNames[i]}");
                     string[] lines = file.Split("\n");
                     map.name = lines[0].Split(" ")[0];
-                    map.speed = (float)Convert.ToDouble(lines[0].Split(" ")[1]);
+                    map.speed = float.Parse(lines[0].Split(" ")[1], CultureInfo.InvariantCulture);
                     for (int j = 1; j < lines.Length; j++)
                     {
                         if (lines[j].Split("|").Count() <= 1) continue;

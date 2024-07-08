@@ -1,0 +1,5 @@
+ge 0.01
+0|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|
+0|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|
+0|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|
+0|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|m t1 t2 t3 by|

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyMappings:
     Mappings:
-    - trigger: 1
+    - trigger: 46
       key: Q
       channel: 10
   ControlMappings:

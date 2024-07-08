@@ -1,7 +1,7 @@
+using MidiJack;
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class MidiInputController : MonoBehaviour
 {
@@ -10,10 +10,13 @@ public class MidiInputController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        for (int i = 0; i < 100; i++)
         {
-            Debug.Log(Input.inputString);
-            text.text = Input.inputString.ToString();
+            if (MidiMaster.GetKeyDown(i))
+            {
+                Debug.Log(i);
+                text.text = i.ToString();
+            }
         }
     }
 
