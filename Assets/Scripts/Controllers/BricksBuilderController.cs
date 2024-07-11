@@ -101,28 +101,29 @@ public class BricksBuilderController : MonoBehaviour
                     {
                         int index = Random.Range(0, 10);
                         obj = bricksObjects.GetBrick(index, new int[1] {0});
-                        if(obj !=null) obj.GetComponent<Brick>().Color = ColorBrick.Red;
+                        if(obj !=null) if (obj.GetComponent<Brick>()) obj.GetComponent<Brick>().Color = ColorBrick.Red;
                     }
                     else if (j == 1)
                     {
                         int index = Random.Range(0, 10);
                         obj = bricksObjects.GetBrick(index, new int[4] { 0, 1, 2, 3 });
-                        if (obj != null) obj.GetComponent<Brick>().Color = ColorBrick.Yellow;
+                        if (obj != null) if (obj.GetComponent<Brick>()) obj.GetComponent<Brick>().Color = ColorBrick.Yellow;
                     }
                     else if (j == 2)
                     {
                         int index = Random.Range(0, 10);
                         obj = bricksObjects.GetBrick(index, new int[2] { 0 , 4});
-                        if (obj != null) obj.GetComponent<Brick>().Color = ColorBrick.Blue;
+                        if (obj != null) if (obj.GetComponent<Brick>()) obj.GetComponent<Brick>().Color = ColorBrick.Blue;
                     }
                     else
                     {
                         int index = Random.Range(0, 10);
                         obj = bricksObjects.GetBrick(index, new int[2] { 0,4 });
-                        if (obj != null) obj.GetComponent<Brick>().Color = ColorBrick.Green;
+                        if (obj != null) if (obj.GetComponent<Brick>()) obj.GetComponent<Brick>().Color = ColorBrick.Green;
                     }
                     if (obj != null)
                     {
+                        if (!obj.GetComponent<Brick>()) continue;
                         obj.GetComponent<Brick>().Speed = speed;
                         obj.transform.position = rows[i].points[j].transform.position;
                         Instantiate(obj);
@@ -131,6 +132,7 @@ public class BricksBuilderController : MonoBehaviour
                 if (Random.Range(0, 5) == 0)
                 {
                     var obj = Instantiate(bricksObjects.line);
+                    if (!obj.GetComponent<Brick>()) continue;
                     obj.GetComponent<Brick>().Speed = speed;
                     obj.transform.position = new Vector3(0, rows[i].points[0].transform.position.y);
                 }

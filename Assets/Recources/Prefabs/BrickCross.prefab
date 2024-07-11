@@ -198,7 +198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3551505665338171923, guid: fe667bf4d48ce6f41b9203b7bf261f84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.6
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 3551505665338171923, guid: fe667bf4d48ce6f41b9203b7bf261f84, type: 3}
       propertyPath: m_LocalPosition.z
@@ -239,6 +239,10 @@ PrefabInstance:
     - target: {fileID: 7390305595314578235, guid: fe667bf4d48ce6f41b9203b7bf261f84, type: 3}
       propertyPath: color
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390305595314578235, guid: fe667bf4d48ce6f41b9203b7bf261f84, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7902332596748339687, guid: fe667bf4d48ce6f41b9203b7bf261f84, type: 3}
       propertyPath: m_Sprite

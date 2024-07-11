@@ -1,3 +1,4 @@
+using Assets.Scripts.GameModels;
 using MidiJack;
 using System;
 using TMPro;
@@ -12,7 +13,7 @@ public class MidiInputController : MonoBehaviour
     {
         for (int i = 0; i < 100; i++)
         {
-            if (MidiMaster.GetKeyDown(i))
+            if (MidiDriver.Instance.GetKeyDown(MidiChannel.Ch10, i) || MidiDriver.Instance.GetKeyUp(MidiChannel.Ch10, i))
             {
                 Debug.Log(i);
                 text.text = i.ToString();

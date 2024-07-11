@@ -9,6 +9,7 @@ public class LoadGameButton : MonoBehaviour
     public void LoadGame()
     {
         CurrentMap.Name=inputField.text;
+        CurrentMap.MusicName=inputField.text;
         SceneManager.ChangeScene(1);
     }
 }
